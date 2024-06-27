@@ -1,0 +1,270 @@
+/* ESTILO GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI Historic', Segoe UI, Heveltica, Arial, sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    background-color: #fafafa;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ESTILO DO CARREGAMENTO */
+.loading-instagram {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.loading-instagram img.logo-loading {
+    width: 80px;
+}
+
+.loading-instagram img.logoname-loading {
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* ESTILO DA SEÇÂO > INTERFACE */
+section.interface {
+    padding: 40px 4%;
+    display: none;
+}
+
+section.interface .flex {
+    align-items: center;
+    justify-content: center;
+}
+
+/* ESTILO DA DIV > CONTAINER DE IMAGES */
+.container-images {
+    position: relative;
+}
+
+.carrossel-images img {
+    position: absolute;
+    top: 26px;
+    left: 156px;
+    transition: opacity 1.5s ease-out;
+    opacity: 0;
+}
+
+.carrossel-images img.selected {
+    opacity: 1;
+}
+
+/* ESTILO DA DIV > CONTAINER DE LOGIN */
+.container-login {
+    background-color: #ffffff;
+    margin-bottom: 60px;
+}
+
+.container-login .login-signin {
+    border: 1px solid #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    padding: 0 40px;
+}
+
+.container-login .login-signin img {
+    margin: 40px 0;
+}
+
+.container-login .login-signin .form-signin form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login .login-signin .form-signin form input {
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    font-size: .75rem;
+    width: 268px;
+    height: 42px;
+    margin: 3px 0;
+    padding-left: 7px;
+}
+
+.container-login .login-signin .form-signin form input::placeholder {
+    color: #737373;
+}
+
+.container-login .login-signin .form-signin form input#signin {
+    background-color: #b2dffc;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: .9rem;
+    height: 32px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.container-login .login-signin .separator p {
+    color: #737373;
+    font-size: .8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.container-login .login-signin .separator p::before {
+    background-color: #dbdbdb;
+    content: '';
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    top: 10px;
+    left: 3px;
+}
+
+.container-login .login-signin .separator p::after {
+    background-color: #dbdbdb;
+    content: '';
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    top: 10px;
+    right: 3px;
+}
+
+.container-login .login-signin .facebook {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.container-login .login-signin .facebook .facebook-icon img {
+    width: .9rem;
+    margin: 10px;
+}
+
+.container-login .login-signin .facebook .facebook-signin a {
+    color: #385185;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.container-login .login-signin .facebook .forget-password a {
+    display: block;
+    color: #385185;
+    font-size: .75rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.container-login .login-signup {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.container-login .login-signup p {
+    font-size: .9rem;
+    text-align: center;
+}
+
+.container-login .login-signup p a {
+    color: #0095f6;
+    font-weight: 700;
+}
+
+.container-login .login-getapp {
+    text-align: center;
+}
+
+.container-login .login-getapp p {
+    font-size: .8rem;
+    margin: 20px 0;
+}
+
+.container-login .login-getapp .images-getapp a img {
+    height: 40px;
+}
+
+/* ESTILO DO RODAPÉ */
+footer {
+    padding: 20px 4%;
+    margin: 30px 0;
+    display: none;
+}
+
+footer .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-links ul {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+footer .footer-links ul li {
+    display: inline-block;
+}
+
+footer .footer-links ul li a {
+    color: #737373;
+    font-size: .75rem;
+    margin-right: 5px;
+}
+
+footer .copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .copyright ul {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+footer .copyright ul li {
+    display: inline-block;
+}
+
+footer .copyright ul li a {
+    color: #737373;
+    font-size: .75rem;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 860px) {
+    /* ESTILO DA DIV > CONTAINER DE IMAGES */
+    .container-images {
+        display: none;
+}
+}
